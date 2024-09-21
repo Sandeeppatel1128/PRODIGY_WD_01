@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Company Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+        }
+        .nav-item{
+            font-weight: bold;
+        }
+        .nav-item:hover{
+          background-color: #61a7f1;
+          color:white !important;
+          transition: all 500ms;
+          font-weight: bold;
+
+        }
+
+        .hero-section {
+            background: url('softwarecompanyimage.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        /* Features Section */
+        #features .feature-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: #007bff;
+            color: #fff;
+            padding: 50px 0;
+            height: auto;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f8f9fa;
+        }
+        .containerheader{
+          background: rgba(57, 109, 214, 0.5);
+          border-radius: 20px;
+          padding: 40px;
+        }
+        .serviceimage{
+            height:200px;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom:30px;
+        }
+        .aboutcontainer {
+            height: 550px;
+            width: 50%;
+            float: left;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 40px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+}
+        .reachus{
+            margin:0px;
+            border:2px solid blue;
+            background-color: darkslategrey;
+            color: #f8f9fa;
+            padding-bottom:15px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " style="border-bottom: 2px solid blue;">
+        <a class="navbar-brand" href="#"><img src="dharmalogo.png" style="height: 40px; width:40px;"><b>&nbsp; Dharma </b>SoftTech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-2 rounded"><a class="nav-link" href="#features">Services</a></li>
+                <li class="nav-item mx-2 rounded"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item mx-2 rounded"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container containerheader">
+            <h1>Innovative Software Solutions</h1>
+            <p class="lead">Empowering businesses through technology and innovation</p>
+            <a href="#features" class="btn btn-primary btn-lg"><b>Our Services</b></a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <img src="softwaredev.jpg" class="serviceimage"> 
+                        <h3>Software Development</h3>
+                        <p>Tailored software solutions to meet your unique business needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <img src="appdev.jpg" alt="" class="serviceimage">
+                        <h3>Mobile App Development</h3>
+                        <p>Creating user-friendly mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <img src="clouddev.jpg" alt="" class="serviceimage">
+                        <h3>Cloud Integration</h3>
+                        <p>Seamless integration of cloud services to enhance business operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class=" text-center" id="about">
+        <div class="container" style="">
+            <h2 style="margin-bottom: 20px;"><span style="text-decoration: none; color: black;">Who are we?</span></h2>
+        
+            <div class="aboutcontainer bg-light" style="">
+                <img src="aboutus.png" alt="" style="height: 80%; width: 80%;">
+            </div>
+            <div class="aboutcontainer bg-dark" style=" color:white;">
+                 <h4 style="font-weight: bolder;">Our Mission</h4>
+                <span style=" line-height: 30px;"> At <strong>Dharma</strong> SoftTech, our mission is to empower businesses through innovative technology, stream line processes, and drive growth. WE believe in delivering  high-quality software that not only meets industry standards but exceeds client expectations.</span>
+                 <br><br>
+                 <h4 style=" font-weight: bolder;">Our Expertise</h4>
+                
+                 <span  style="line-height:30px;">
+                    
+                    Full-Stack Web Development<br>
+                    Custom Software Solutions<br>
+                    Mobile App Development<br>
+                    Cloud Integration<br>
+                    
+                 </span>
+            </div>
+         
+            <a href="#contact" class="btn btn-primary btn-lg m-5" id="contact">Get in Touch</a>
+        </div>
+    </section>
+
+    <!--Reachus-->
+    <div class="reachus">
+        <div class="reachusadd "><b>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d404.42493476794954!2d82.58390640766979!3d25.56461237262758!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1726773369653!5m2!1sen!2sin"style=" height:100%; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+     <br>
+    
+           <center > 74, Seer , Seur,Mariahu Jaunpur Uttar Pradesh 222161</center>
+        </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer class="footer py-4 bg-light " style="border-top: 2px solid blue;">
+        <div class="container text-center">
+
+            <p>&copy; 2024<b> Dharma</b> SoftTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
